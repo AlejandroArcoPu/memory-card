@@ -68,6 +68,10 @@
     width: 30px;
   }
 
+  .game-header {
+    padding: 20px;
+  }
+
   .game-main {
     margin-top: 30px;
   }

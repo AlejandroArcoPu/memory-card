@@ -33,3 +33,20 @@
   margin-top: 8px;
   width: 180px;
 }
+
+@media only screen and (max-width: 440px) {
+  .cards-mag-img {
+    width: 35px;
+    margin-bottom: 70px;
+  }
+
+  .scoreboard-container {
+    margin: 0px;
+  }
+  .scoreboard-text {
+    font-size: 0.8rem;
+  }
+  .scoreboard-underline {
+    width: 130px;
+  }
+}
