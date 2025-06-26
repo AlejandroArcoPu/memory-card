@@ -2,6 +2,7 @@ import "./App.css";
 import logo from "./assets/logo-white.webp";
 import { gradients, modes } from "./types";
 import { Github } from "lucide-react";
+import { LucideMessageCircleQuestion } from "lucide-react";
 import loop3 from "./assets/loop_3.svg";
 import brain from "./assets/emojis/brain.avif";
 import joker from "./assets/emojis/black_joker.avif";
@@ -12,6 +13,11 @@ import { motion } from "motion/react";
 
 export default function App() {
   const [mode, setMode] = useState({});
+  const [help, setHelp] = useState(false);
+
+  const handleHelp = () => {
+    setHelp(!help);
+  };
 
   const handleMode = (e) => {
     const value = e.target.textContent;
@@ -23,6 +29,38 @@ export default function App() {
   ) : (
     <>
       <header className="header-giphy">
+        <button
+          className={
+            help
+              ? "header-giphy-github header-giphy-button-active"
+              : "header-giphy-github"
+          }
+          onClick={handleHelp}
+        >
+          <LucideMessageCircleQuestion color="white" />
+          <div
+            className={
+              help
+                ? "header-giphy-question-container"
+                : "header-giphy-not-display"
+            }
+          >
+            <h4 className="header-giphy-question-title">Rules</h4>
+            <div className="header-giphy-decoration"></div>
+            <ul className="header-giphy-question-list">
+              <li>
+                Click each card{" "}
+                <span className="header-giphy-underline">once.</span>
+              </li>
+              <li>
+                Clicking the same card{" "}
+                <span className="header-giphy-underline">
+                  twice ends the game.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </button>
         <a
           href="https://github.com/AlejandroArcoPu"
           className="header-giphy-github"

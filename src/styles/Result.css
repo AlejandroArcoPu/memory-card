@@ -34,6 +34,7 @@
   align-items: center;
   gap: 10px;
   margin: 0px;
+  font-weight: 900;
 }
 
 .result-modal-title-img {
@@ -46,45 +47,21 @@
   width: 300px;
 }
 
-.result-modal-title {
-  font-weight: 900;
-}
-
 .result-modal-button {
   padding: 0px;
   background: none;
   border: none;
   cursor: pointer;
-  width: 50px;
   transition: transform 0.3s;
+  color: white;
+  font-weight: 700;
+  background-color: #d43b3b;
+  padding: 10px 30px;
+  border-radius: 30px;
 }
 
 .result-modal-button:hover {
-  transform: scale(1.2);
-}
-
-.result-modal-button-img {
-  object-fit: cover;
-}
-
-.result-modal-button-text {
-  position: absolute;
-  color: white;
-}
-
-.result-modal-button-arrow {
-  position: absolute;
-  width: 80px;
-  bottom: 45px;
-  right: 95px;
-}
-
-.result-modal-button-text {
-  position: absolute;
-  width: 100px;
-  font-size: 0.6rem;
-  bottom: 8px;
-  right: 20px;
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 440px) {
