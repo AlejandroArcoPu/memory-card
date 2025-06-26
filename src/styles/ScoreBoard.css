@@ -1,0 +1,35 @@
+.scoreboard-container {
+  display: flex;
+  flex-direction: column;
+  transform: rotate(-5deg);
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.scoreboard-score {
+  display: flex;
+  margin-left: 10px;
+}
+
+.scoreboard-text {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.scoreboard-emoji {
+  width: 20px;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.scoreboard-results {
+  margin: 0px;
+}
+
+.scoreboard-underline {
+  margin-top: 8px;
+  width: 180px;
+}

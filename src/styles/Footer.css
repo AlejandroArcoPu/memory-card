@@ -1,0 +1,27 @@
+footer {
+  color: white;
+  padding: 20px;
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+  text-align: center;
+}
+
+.foot-giphy {
+  margin: 0px;
+}
+
+.foot-giphy-linkedin,
+.foot-giphy-design,
+.foot-giphy-lucide {
+  text-decoration: underline;
+  color: #01ae69;
+}
+
+.foot-giphy-design {
+  color: #0192b6;
+}
+
+.foot-giphy-lucide {
+  color: #9833ff;
+}
